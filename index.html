@@ -8,7 +8,7 @@
 	<style>
 		html,
 		body {
-			background: #666666;
+			background: #333333;
 			width: 100%;
 			height: 100%;
 			overflow: visible;
@@ -43,15 +43,15 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/0.0.1_250219.2149.loader.js"></script>
+		<script src="Build/0.0.2_250223.1248.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/0.0.1_250219.2149.data",
-				frameworkUrl: "Build/0.0.1_250219.2149.framework.js",
-				codeUrl: "Build/0.0.1_250219.2149.wasm",
+				dataUrl: "Build/0.0.2_250223.1248.data",
+				frameworkUrl: "Build/0.0.2_250223.1248.framework.js",
+				codeUrl: "Build/0.0.2_250223.1248.wasm",
 				streamingAssetsUrl: "StreamingAssets",
-				companyName: "DefaultCompany",
+				companyName: "OmangLoveMoku",
 				productName: "Moku1stAnniversary",
 				productVersion: "0.0.1",
 			};
@@ -75,15 +75,15 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 600 / 960;
+					var r = 1440 / 810;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 960;
-					h = 600;
+					w = 810;
+					h = 1440;
 				}
 
 				container.style.width = canvas.style.width = w + "px";
